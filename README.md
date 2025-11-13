@@ -104,7 +104,7 @@ If you use this repository, its datasets, or analysis scripts, please cite the Q
 
 ```bibtex
 @article{casagrande2025qftt_wesh,
-  title   = {Quantum Field Theory of Time (QFTT) - Weak Entanglement Symmetry Hypothesis (WESH)},
+  title   = {Quantum Field Theory of Time (QFTT), the Weak Entanglement Symmetry Hypothesis (WESH) and Emergent Spacetime},
   author  = {Casagrande, Luca},
   year    = {2025},
   note    = {Manuscript in preparation},
