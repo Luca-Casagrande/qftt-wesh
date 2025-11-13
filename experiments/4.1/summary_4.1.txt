@@ -1,0 +1,77 @@
+--- Running WESH (1/N² stability) ---
+N=3: Final Purity=0.5, Final Coherence=3, Time=0.46s
+N=4: Final Purity=0.25, Final Coherence=3, Time=0.57s
+N=5: Final Purity=0.25, Final Coherence=7, Time=0.78s
+N=6: Final Purity=0.125, Final Coherence=7.003, Time=6.19s
+N=7: Final Purity=0.125, Final Coherence=19, Time=21.15s
+N=8: Final Purity=0.06291, Final Coherence=19.66, Time=147.01s
+N=9: Final Purity=0.0625, Final Coherence=48.12, Time=1018.89s
+
+--- Running Standard Decoherence (∝ N) ---
+N=3: Final Purity=0.25, Final Coherence=1.005, Time=0.81s
+N=4: Final Purity=0.125, Final Coherence=1.022, Time=0.68s
+N=5: Final Purity=0.0625, Final Coherence=1.017, Time=1.57s
+N=6: Final Purity=0.03125, Final Coherence=1.026, Time=11.48s
+N=7: Final Purity=0.01563, Final Coherence=1.034, Time=71.33s
+N=8: Final Purity=0.007813, Final Coherence=1.042, Time=543.69s
+N=9: Final Purity=0.003906, Final Coherence=1.05, Time=4223.31s
+
+--- Running Pure WDW (Unstable) ---
+N=3: Final Purity=1, Final Coherence=3.433, Time=0.42s
+N=4: Final Purity=1, Final Coherence=5.717, Time=0.34s
+N=5: Final Purity=1, Final Coherence=11.23, Time=0.59s
+N=6: Final Purity=1, Final Coherence=9.093, Time=2.37s
+N=7: Final Purity=1, Final Coherence=22.07, Time=14.43s
+N=8: Final Purity=1, Final Coherence=28.06, Time=91.40s
+N=9: Final Purity=1, Final Coherence=29.41, Time=614.25s
+
+📊 Focused Purity/Coherence plot saved: wesh_results_20251109_224104/simulation_results_PurityCoherence_20251109_224104.png
+
+
+======================================================================
+DETAILED NUMERICAL SUMMARY
+======================================================================
+Model                          |   N |      Final Var. |    Final Purity |      Final Coh.
+--------------------------------------------------------------------------------------------
+WESH (1/N² stability)          |   3 |           1.333 |             0.5 |               3
+WESH (1/N² stability)          |   4 |               2 |            0.25 |               3
+WESH (1/N² stability)          |   5 |             1.6 |            0.25 |               7
+WESH (1/N² stability)          |   6 |               2 |           0.125 |           7.003
+WESH (1/N² stability)          |   7 |           1.714 |           0.125 |              19
+WESH (1/N² stability)          |   8 |           1.997 |         0.06291 |           19.66
+WESH (1/N² stability)          |   9 |           1.778 |          0.0625 |           48.12
+--------------------------------------------------------------------------------------------
+Standard Decoherence (∝ N)     |   3 |           1.001 |            0.25 |           1.005
+Standard Decoherence (∝ N)     |   4 |           1.005 |           0.125 |           1.022
+Standard Decoherence (∝ N)     |   5 |               1 |          0.0625 |           1.017
+Standard Decoherence (∝ N)     |   6 |               1 |         0.03125 |           1.026
+Standard Decoherence (∝ N)     |   7 |               1 |         0.01563 |           1.034
+Standard Decoherence (∝ N)     |   8 |               1 |        0.007813 |           1.042
+Standard Decoherence (∝ N)     |   9 |               1 |        0.003906 |            1.05
+--------------------------------------------------------------------------------------------
+
+======================================================================
+SCALING EXPONENT ANALYSIS (α)
+======================================================================
+
+Model: WESH (1/N² stability)
+  Variance Exponent α = 0.210
+  Purity Exponent α   = -1.909
+  Coherence Exponent α = 2.498
+
+Model: Standard Decoherence (∝ N)
+  Variance Exponent α = -0.002
+  Purity Exponent α   = -3.772
+  Coherence Exponent α = 0.036
+
+======================================================================
+
+======================================================================
+ANALYSIS COMPLETE
+======================================================================
+
+✅ All results saved to folder: wesh_results_20251109_224104/
+   - Numerical summary printed to console.
+   - Main plot saved as: simulation_results_PurityCoherence_20251109_224104.png
+
+======================================================================
