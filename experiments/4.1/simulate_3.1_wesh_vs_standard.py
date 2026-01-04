@@ -455,4 +455,5 @@ if __name__ == '__main__':
     print(f"\n All results saved to folder: {wesh_test.output_dir}/")
     print("   - Numerical summary printed to console.")
     print(f"   - Main plot saved as: simulation_results_PurityCoherence_{wesh_test.timestamp}.png")
+
     print("\n" + "="*70)
