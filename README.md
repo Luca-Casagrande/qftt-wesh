@@ -27,7 +27,7 @@ from the same dynamics, without additional thermal ansätze or fine tuning.
 
 ---
 
-## Highlights (Section 4)
+## Highlights (Section 3)
 
 This repository focuses exclusively on the **falsifiable signatures** discussed in Section 4 of the manuscript. In particular, the data and scripts here provide the basis for the following reported trends:
 
@@ -49,7 +49,7 @@ The emphasis is on **reproducible evidence and detailed analysis choices** rathe
 
 ---
 
-## Scope of this repository (Section 4 only)
+## Scope of this repository (Section 3 only)
 
 This repository does **not** contain the full formal development of QFTT–WESH.  
 It provides the **numerical and experimental material** underpinning Section 4 (Experimental Validation):
@@ -78,13 +78,13 @@ Each subfolder corresponds **one‑to‑one** to a figure in Section 4 and conta
 
 | Folder        | Manuscript figure(s) | Description                                                                 |
 |---------------|----------------------|-----------------------------------------------------------------------------|
-| `4.1/`        | Fig. 4.1             | WESH vs standard local decoherence (purity & coherence scaling, CPU simulations). |
-| `4.2/`        | Fig. 4.2             | Coherence under dephasing / projective / amplitude damping with different `N`‑scaling of the coupling. |
-| `4.3-4.4/`    | Figs. 4.3–4.4        | Pre‑asymptotic collision model vs first‑order local model: `γ(N)` scaling (`α ≈ −1.80` vs `−1`). |
-| `4.5/`        | Fig. 4.5             | IBM Eagle QPU: `cos²θ` angular dependence (`N = 3`), mini‑scaling at `θ ≈ 30°`, and W‑state control. |
-| `4.6/`        | Fig. 4.6             | Fake‑GHZ control: gate‑matched PRODUCT / FAKE_GHZ / GHZ sequences to separate gate overhead from genuine entanglement effects. |
-| `4.7-4.8/`    | Figs. 4.7–4.8        | GHZ vs PRODUCT parity distributions and decay statistics (IBM Eagle Experiment 6): ECDFs, violin plots, significance analysis (≈ `21σ`). |
-| `4.9/`        | Fig. 4.9             | Cross‑platform countercheck on Rigetti Ankaa‑3: `cos²θ` angular dependence for `N = 3 … 6`, 400k shots. |
+| `3.1/`        | Fig. 3.1             | WESH vs standard local decoherence (purity & coherence scaling, CPU simulations). |
+| `3.2/`        | Fig. 3.2             | Coherence under dephasing / projective / amplitude damping with different `N`‑scaling of the coupling. |
+| `3.3-3.4/`    | Figs. 3.3–3.4        | Pre‑asymptotic collision model vs first‑order local model: `γ(N)` scaling (`α ≈ −1.80` vs `−1`). |
+| `3.5/`        | Fig. 3.5             | IBM Eagle QPU: `cos²θ` angular dependence (`N = 3`), mini‑scaling at `θ ≈ 30°`, and W‑state control. |
+| `3.6/`        | Fig. 3.6             | Fake‑GHZ control: gate‑matched PRODUCT / FAKE_GHZ / GHZ sequences to separate gate overhead from genuine entanglement effects. |
+| `3.7-3.8/`    | Figs. 3.7–3.8        | GHZ vs PRODUCT parity distributions and decay statistics (IBM Eagle Experiment 6): ECDFs, violin plots, significance analysis (≈ `21σ`). |
+| `3.9/`        | Fig. 3.9             | Cross‑platform countercheck on Rigetti Ankaa‑3: `cos²θ` angular dependence for `N = 3 … 6`, 400k shots. |
 
 Each folder is self‑contained: running the main script in that directory regenerates the corresponding plots from the included data (subject to the required Python/QPU dependencies).
 
@@ -93,7 +93,7 @@ Each folder is self‑contained: running the main script in that directory regen
 ## Quick start (reproducibility)
 
 1. Clone or download the repository.
-2. Navigate to the desired figure folder, e.g. `experiments/4.5/`.
+2. Navigate to the desired figure folder, e.g. `experiments/3.5/`.
 3. Ensure Python 3.x and the required libraries (`numpy`, `pandas`, `matplotlib`, plus `qiskit` / `qiskit-ibm-runtime` or `braket` where relevant) are installed.
 4. Run the main analysis script to regenerate the plots from the provided data.
 
