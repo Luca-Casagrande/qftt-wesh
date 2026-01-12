@@ -147,6 +147,7 @@ qftt-wesh/
 | [`3.6/`](./experiments/3.6/) | Fig. 3.6 | Fake‑GHZ control: gate‑matched PRODUCT / FAKE_GHZ / GHZ sequences to separate gate overhead from genuine entanglement effects. |
 | [`3.7-3.8/`](./experiments/3.7-3.8/) | Figs. 3.7–3.8 | GHZ vs PRODUCT parity distributions and decay statistics (IBM Eagle Experiment 6): ECDFs, violin plots, significance analysis (≈ `21σ`). |
 | [`3.9/`](./experiments/3.9/) | Fig. 3.9 | Cross‑platform countercheck on Rigetti Ankaa‑3: `cos²θ` angular dependence for `N = 3 … 6`, 400k shots. |
+
 Each folder is self‑contained: running the main script in that directory regenerates the corresponding plots from the included data.
 
 ---
