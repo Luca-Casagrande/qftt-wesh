@@ -4,7 +4,11 @@ Mathlib version: f897ebcf72cd16f89ab4577d0c826cd14afaafc7
 -/
 
 /-
-Formalization of Appendix B of the QFTT-WESH paper. This module defines the auxiliary parameter $s$, the time-production functional $\Gamma[\Psi]$, and the emergence of physical time $t$. It includes the definitions of the QFTT context, the gamma kernel, and the survival probability. Key theorems proven include the positivity of $\Gamma$ under non-degeneracy (Lemma B.1), the activation of Eigentime events on chronogenetic segments (Lemma B.2), and the algebraic limit of the Law of Large Numbers relating physical time to Eigentime counts.
+Formalization of Appendix B of the QFTT-WESH paper. 
+This module defines the auxiliary parameter $s$, the time-production functional $\Gamma[\Psi]$, and the emergence of physical time $t$. 
+It includes the definitions of the QFTT context, the gamma kernel, and the survival probability. 
+Key theorems proven include the positivity of $\Gamma$ under non-degeneracy (Lemma B.1), the activation of Eigentime events on chronogenetic segments (Lemma B.2), 
+and the algebraic limit of the Law of Large Numbers relating physical time to Eigentime counts.
 -/
 
 import Mathlib
