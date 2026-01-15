@@ -1308,9 +1308,9 @@ theorem theorem_D_2_variational_alignment
           ⟨hy.1, hy.2.1, hy.2.2.2⟩
         exact huniq y hy'
 /-!
-## Primitivity and Markov-Kakutani (Alternative to Banach)
+## Primitivity and Schauder-Tychonoff (Alternative to Banach)
 
-The paper uses Markov-Kakutani for existence of fixed points on compact convex sets,
+The paper uses Schauder-Tychonoff for existence of fixed points on compact convex sets,
 combined with primitivity (unique invariant state) for uniqueness.
 The Banach contraction approach above is sufficient but this section provides
 the alternative formulation matching the paper's language.
@@ -1346,15 +1346,17 @@ theorem contraction_implies_primitive
 /-!
 ## O(1/N) Residual Interface
 
-The WESH framework predicts corrections of order O(1/N) for finite N.
-This interface provides a formal way to express such residual bounds.
+The WESH framework predicts corrections of order O(1/N) for deformed/effective 
+symmetries at finite N. Exact atemporal symmetries have d/dt ⟨Q⟩ = 0 exactly.
+This interface provides a formal way to express residual bounds where applicable.
 -/
 
 /-- A residual function r(N) is O(1/N) if bounded by C/N for some constant C. -/
 def residual_O1_over_N (r : ℕ → ℝ) : Prop :=
   ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N → |r N| ≤ C / N
 
-/-- Residual bound for time derivative of conserved charge: d/dt ⟨Q⟩ = O(1/N). -/
+/-- Residual bound for time derivative of charges with deformed/effective symmetry: 
+    d/dt ⟨Q⟩ = O(1/N). For exact atemporal symmetries, d/dt ⟨Q⟩ = 0 exactly. -/
 def charge_time_derivative_residual
     {H : Type*} [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] [FiniteDimensional ℂ H]
     (_Q : H →L[ℂ] H)
