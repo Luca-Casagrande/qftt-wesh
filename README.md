@@ -35,8 +35,8 @@ The core mathematical results of QFTT‑WESH have been **formally verified in [L
 |------|---------|-------------|
 | [`formal-verification/Section1.lean`](./formal-verification/Section1.lean) | Section 1 (QFTT framework & WESH) | **Derivation of the WESH master equation** as the unique dynamical–dissipative completion of the Wheeler–DeWitt constraint, selected by CPT symmetry, WESH–Noether conservation, causality, and collective N² stability |
 | [`formal-verification/Section5.lean`](./formal-verification/Section5.lean) | Section 5 (GR emergence) | **Derivation of the Einstein field equations** from WESH stationarity via gradient alignment and hidden-sector cancellation |
-| [`formal-verification/Section6_FIRST.lean`](./formal-verification/Section6_FIRST.lean) | Section 6 (BH thermodynamics — part I) | **Derivation of Bekenstein–Hawking entropy** with universal 1/4 prefactor from bipartite pairing and swap-even projection |
-| [`formal-verification/Section6_SECOND.lean`](./formal-verification/Section6_SECOND.lean) | Section 6 (BH thermodynamics — part II) | **Derivation of the holographic bound** from chronogenetic stability (Γ > 0 ⟹ S ≤ A/4L²_P) |
+| [`formal-verification/Section6_Part1.lean`](./formal-verification/Section6_Part1.lean) | Section 6 (BH thermodynamics — part I) | **Derivation of Bekenstein–Hawking entropy** with universal 1/4 prefactor from bipartite pairing and swap-even projection |
+| [`formal-verification/Section6_Part2.lean`](./formal-verification/Section6_Part2.lean) | Section 6 (BH thermodynamics — part II) | **Derivation of the holographic bound** from chronogenetic stability (Γ > 0 ⟹ S ≤ A/4L²_P) |
 | [`formal-verification/AppendixA.lean`](./formal-verification/AppendixA.lean) | Appendix A | Kernel conventions, Yukawa structure, Planck anchoring |
 | [`formal-verification/AppendixB.lean`](./formal-verification/AppendixB.lean) | Appendix B | Chronogenesis map, eigentime bootstrap, monotonicity of physical time |
 | [`formal-verification/AppendixC.lean`](./formal-verification/AppendixC.lean) | Appendix C | WESH–Noether conservation at operator level |
