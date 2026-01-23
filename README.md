@@ -29,7 +29,7 @@ from the same dynamics, without additional thermal ansatz or fine tuning.
 
 ## Formal Verification (Lean 4)
 
-The core mathematical results of QFTT‑WESH have been **formally verified in [Lean 4](https://leanprover-community.github.io/)** using the [Mathlib 4](https://github.com/leanprover-community/mathlib4) library. All files compile and type‑check with **zero `sorry` statements**, **no warnings**, and axioms limited to textbook results (Markov–Kakutani, GKSL, Cauchy–Schwarz, Taylor, etc.) or to QFTT–WESH-specific content derived elsewhere in the manuscript.
+The core mathematical results of QFTT‑WESH have been **formally verified in [Lean 4](https://leanprover-community.github.io/)** using the [Mathlib 4](https://github.com/leanprover-community/mathlib4) library. All files compile and type‑check cleanly. Axioms are limited to standard textbook results and to QFTT–WESH-specific content derived elsewhere in the Lean corpus.
 
 | File | Content | Key results |
 |------|---------|-------------|
@@ -54,11 +54,11 @@ The core mathematical results of QFTT‑WESH have been **formally verified in [L
 
 - **The Einstein field equations**, derived from WESH stationarity via gradient alignment (`∂_μT = k∂_μΦ`) and hidden-sector cancellation.
 
-- **Bekenstein–Hawking black hole entropy** `S = A/(4L²_P) + γ ln(A/L²_P) + ...`, fully verified with zero axioms and zero `sorry` statements. The universal 1/4 prefactor *emerges* from the interplay of bipartite pairing (1/2) and swap-even RAQ projection (1/2). The proof includes the complete linear-algebraic trace calculation (`trace_swap`: Tr(G_xy) = D via orthonormal basis decomposition), the asymptotic limit (factor_RAQ → 1/2 as D → ∞), and the Big-O bounds for subleading corrections. No thermal ansatz, no Euclidean continuation, no free parameters.
+- **Bekenstein–Hawking black hole entropy** `S = A/(4L²_P) + γ ln(A/L²_P) + ...`, formally verified. The universal 1/4 prefactor *emerges* from the interplay of bipartite pairing (1/2) and swap-even RAQ projection (1/2). The proof includes the complete linear-algebraic trace calculation (`trace_swap`: Tr(G_xy) = D via orthonormal basis decomposition), the asymptotic limit (factor_RAQ → 1/2 as D → ∞), and the Big-O bounds for subleading corrections. No thermal ansatz, no Euclidean continuation, no free parameters.
 
 - **The cosmological constant** as ontological shot noise of eigentime production, with scaling `Λ ~ H²` derived from CLT on the eigentime counting process.
 
-All derivations are mechanically certified by the Lean 4 type-checker. The formalization contains approximately 5500 lines of verified code.
+All derivations are mechanically certified by the Lean 4 type-checker. The formalization comprises **6,100+ lines of verified code (LOC)**.
 
 To verify locally (pinned toolchain: **Lean v4.24.0**, Mathlib commit `f897ebcf`):
 
@@ -67,7 +67,7 @@ cd formal-verification
 lake build
 ```
 
-This work was developed with the assistance of a cross-inferencing multi-AI workflow, mainly involving ChatGPT-5.2 Pro, Claude Opus 4.5, Gemini 3 Pro. [Aristotle v. 0.6.0](https://aristotle.harmonic.fun/), by Harmonic, was employed in the final stages, particularly for Lean 4 formalization, using a combined top-down and bottom-up approach. The author intends to further document this multi-AI architecture in future work, hoping it may contribute to AI-assisted theoretical physics research, in which, no matter the tools employed, human verification and supervision remain indispensable.
+This work was developed with the assistance of a cross-inferencing multi-AI workflow, primarily involving ChatGPT-5.2 Pro and Claude Opus 4.5 for theoretical development, mathematical derivations, and iterative refinement, but also Gemini 3 Pro and other models. Aristotle v.~0.6.0 (Harmonic) was also used, in conjunction with ChatGPT-5.2 Pro and Claude Opus 4.5, as a translation tool in the final stages to convert established mathematical content into Lean 4 syntax. The author intends to further document this multi-AI architecture in future work, hoping it may contribute to AI-assisted theoretical physics research. Throughout the process, the research, conceptual framework and its details, the workflow orchestration, and the verification of every output remained with the author.
 
 ---
 
@@ -110,7 +110,16 @@ This repository also contains the **numerical and experimental material** underp
 
 ```
 qftt-wesh/
-├── formal-verification/     # Lean 4 proofs
+├── paper/                       # Manuscript source
+│   ├── QFTT-WESH.tex
+│   ├── QFTT-WESH.pdf
+│   └── figures/
+│       ├── Picture1.png         # Figure 1: Conceptual overview
+│       ├── Picture2.png         # Figure 2: WESH as WDW extension
+│       ├── Picture3.png         # Figure 3: Spacetime bootstrap
+│       ├── Picture4.png         # Figure 4: GR emergence
+│       └── Picture4b.png        # Figure 5: BH thermodynamics
+├── formal-verification/         # Lean 4 proofs (6,100+ LOC)
 │   ├── Section1.lean
 │   ├── Section5.lean
 │   ├── Section6_FIRST.lean
@@ -123,7 +132,7 @@ qftt-wesh/
 │   ├── AppendixH.lean
 │   ├── AppendixI.lean
 │   └── AppendixJ.lean
-├── experiments/             # Data and scripts
+├── experiments/                 # Data and scripts
 │   ├── 3.1/
 │   ├── 3.2/
 │   ├── 3.3-3.4/
@@ -134,7 +143,9 @@ qftt-wesh/
 └── README.md
 ```
 
-### Experiments folder
+### Paper folder
+
+The `paper/` folder contains the complete LaTeX source and compiled PDF of the manuscript, along with the synoptic figures (Figures 1–5) illustrating the QFTT–WESH conceptual architecture.
 
 ### Experiments folder
 
@@ -196,5 +207,3 @@ If you use this repository, its datasets, analysis scripts, or formal proofs, pl
 ## License
 
 This work is released under the [MIT License](https://opensource.org/licenses/MIT).
-
-
