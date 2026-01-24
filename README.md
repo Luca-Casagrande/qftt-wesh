@@ -1,5 +1,8 @@
 # qftt-wesh
 
+[![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Verified-brightgreen?style=flat-square)](./formal-verification)
+![Verified LOC](https://img.shields.io/badge/Verified_LOC-6.1k+-blue?style=flat-square)
+
 Experimental validation datasets, scripts, figures, and **formal verification** for the manuscript
 
 > **"Quantum Field Theory of Time (QFTT), the Weak Entanglement Symmetry Hypothesis (WESH) and Emergent Spacetime" — L. Casagrande (2026).**
