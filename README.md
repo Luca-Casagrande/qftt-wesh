@@ -28,6 +28,12 @@ At the stationary WESH bootstrap fixed point the time field aligns with the grav
 
 from the same dynamics, without additional thermal ansatz or fine tuning.
 
+Shot noise from the discrete eigentime substrate propagates to the cosmological constant as `δΛ ~ 1/√V₄`; at the Hubble scale (`V₄ ~ H⁻⁴`) this yields
+
+`δΛ ~ H²`
+
+matching the observed order of magnitude without anthropic selection or fine tuning.
+
 ---
 
 ## Formal Verification (Lean 4)
