@@ -30,7 +30,7 @@ from the same dynamics, without additional thermal ansatz.
 
 Shot noise from the discrete eigentime substrate propagates to the cosmological constant as `δΛ ~ 1/√V₄`; at the Hubble scale (`V₄ ~ H⁻⁴`) this yields
 
-`δΛ ~ H²`
+`Λ ~ H²`
 
 matching the observed order of magnitude without anthropic selection or fine tuning.
 
