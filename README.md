@@ -26,7 +26,7 @@ At the stationary WESH bootstrap fixed point the time field aligns with the grav
 
 `S_BH = A/(4 L_P^2) + γ log(A/L_P^2) + …`
 
-from the same dynamics, without additional thermal ansatz or fine tuning.
+from the same dynamics, without additional thermal ansatz.
 
 Shot noise from the discrete eigentime substrate propagates to the cosmological constant as `δΛ ~ 1/√V₄`; at the Hubble scale (`V₄ ~ H⁻⁴`) this yields
 
