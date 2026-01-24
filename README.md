@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18363426.svg)](https://doi.org/10.5281/zenodo.18363426)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Verified-brightgreen?style=flat-square)](./formal-verification)
-![Verified LOC](https://img.shields.io/badge/Verified_LOC-6.1k+-blue?style=flat-square)
+![Verified LOC](https://img.shields.io/badge/Verified_LOC-6.1k+-6a0dad)
 
 **Canonical repository** comprising the **full manuscript**, **formal verification** (Lean 4), and **experimental validation datasets** for the framework:
 
