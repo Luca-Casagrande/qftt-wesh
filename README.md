@@ -1,6 +1,6 @@
 # qftt-wesh
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18363426.svg)](https://doi.org/10.5281/zenodo.18363426)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18363425.svg)](https://doi.org/10.5281/zenodo.18363425)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Verified-brightgreen?style=flat-square)](./formal-verification)
 ![Verified LOC](https://img.shields.io/badge/Verified_LOC-6.1k+-6a0dad)
 
@@ -211,6 +211,9 @@ If you use this repository, its datasets, analysis scripts, or formal proofs, pl
   year    = {2026},
 }
 ```
+## Changelog
+- **v1.1** (2026-01-27): Clarified falsifiability hierarchy (core vs diagnostic); removed speculative Kerr paragraph
+- **v1.0** (2026-01-24): Initial release
 
 ---
 
