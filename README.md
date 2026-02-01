@@ -212,9 +212,9 @@ If you use this repository, its datasets, analysis scripts, or formal proofs, pl
 }
 ```
 ## Changelog
+- **v1.2** (2026-02-01): Fixed Appendix F figure numbering (F.1); added cross-platform outlook for trapped-ion validation
 - **v1.1** (2026-01-27): Clarified falsifiability hierarchy (core vs diagnostic); removed speculative Kerr paragraph
 - **v1.0** (2026-01-24): Initial release
-
 ---
 
 ## License
