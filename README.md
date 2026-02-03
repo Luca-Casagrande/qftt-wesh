@@ -130,7 +130,7 @@ qftt-wesh/
 │       ├── Picture3.png         # Figure 3: Spacetime bootstrap
 │       ├── Picture4.png         # Figure 4: GR emergence
 │       └── Picture4b.png        # Figure 5: BH thermodynamics
-├── formal-verification/         # Lean 4 proofs (6,100+ LOC)
+├── formal-verification/         # Lean 4 proofs (6,700+ LOC)
 │   ├── Section1.lean
 │   ├── Section5.lean
 │   ├── Section6_FIRST.lean
@@ -139,6 +139,7 @@ qftt-wesh/
 │   ├── AppendixB.lean
 │   ├── AppendixC.lean
 │   ├── AppendixD.lean
+│   ├── AppendixF.lean
 │   ├── AppendixG.lean
 │   ├── AppendixH.lean
 │   ├── AppendixI.lean
