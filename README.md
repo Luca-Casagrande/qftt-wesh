@@ -51,6 +51,7 @@ The core mathematical results of QFTT‑WESH have been **formally verified in [L
 | [`formal-verification/AppendixB.lean`](./formal-verification/AppendixB.lean) | Appendix B | Chronogenesis map, eigentime bootstrap, monotonicity of physical time |
 | [`formal-verification/AppendixC.lean`](./formal-verification/AppendixC.lean) | Appendix C | WESH–Noether conservation at operator level |
 | [`formal-verification/AppendixD.lean`](./formal-verification/AppendixD.lean) | Appendix D | Fixed-point uniqueness via Dobrushin contraction, variational alignment |
+| [`formal-verification/AppendixF.lean`](./formal-verification/AppendixF.lean) | Appendix F | Angular dependence law: lattice averaging, Fourier→cos²θ, final law Γ(θ) = Γ̄(1+ε cos²θ) |
 | [`formal-verification/AppendixG.lean`](./formal-verification/AppendixG.lean) | Appendix G | Operator-level backbone for WESH–Noether (commutant structure, T-neutrality) |
 | [`formal-verification/AppendixH.lean`](./formal-verification/AppendixH.lean) | Appendix H | Complete positivity, trace preservation, no-signaling |
 | [`formal-verification/AppendixI.lean`](./formal-verification/AppendixI.lean) | Appendix I | Quadratic selection from collective stability, CPT-evenness |
@@ -68,7 +69,7 @@ The core mathematical results of QFTT‑WESH have been **formally verified in [L
 
 - **The cosmological constant** as ontological shot noise of eigentime production, with scaling `Λ ~ H²` derived from CLT on the eigentime counting process.
 
-All derivations are mechanically certified by the Lean 4 type-checker. The formalization comprises **6,100+ lines of verified code (LOC)**.
+All derivations are mechanically certified by the Lean 4 type-checker. The formalization comprises **6,700+ lines of verified code (LOC)**.
 
 To verify locally (pinned toolchain: **Lean v4.24.0**, Mathlib commit `f897ebcf`):
 
@@ -212,6 +213,7 @@ If you use this repository, its datasets, analysis scripts, or formal proofs, pl
 }
 ```
 ## Changelog
+- **v1.3** (2026-02-03): Added Appendix F formal verification (angular dependence law, 0 sorry, 0 axioms)
 - **v1.2** (2026-02-01): Fixed Appendix F figure numbering (F.1); added cross-platform outlook for trapped-ion validation
 - **v1.1** (2026-01-27): Clarified falsifiability hierarchy (core vs diagnostic); removed speculative Kerr paragraph
 - **v1.0** (2026-01-24): Initial release
