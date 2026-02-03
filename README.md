@@ -133,8 +133,8 @@ qftt-wesh/
 ├── formal-verification/         # Lean 4 proofs (6,700+ LOC)
 │   ├── Section1.lean
 │   ├── Section5.lean
-│   ├── Section6_FIRST.lean
-│   ├── Section6_SECOND.lean
+│   ├── Section6_Part1.lean
+│   ├── Section6_Part2.lean
 │   ├── AppendixA.lean
 │   ├── AppendixB.lean
 │   ├── AppendixC.lean
