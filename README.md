@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18363425.svg)](https://doi.org/10.5281/zenodo.18363425)
 [![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Verified-brightgreen?style=flat-square)](./formal-verification)
-![Verified LOC](https://img.shields.io/badge/Verified_LOC-6.1k+-6a0dad)
+![Verified LOC](https://img.shields.io/badge/Verified_LOC-6.7k+-6a0dad)
 
 **Canonical repository** comprising the **full manuscript**, **formal verification** (Lean 4), and **experimental validation datasets** for the framework:
 
@@ -71,11 +71,12 @@ The core mathematical results of QFTT‑WESH have been **formally verified in [L
 
 All derivations are mechanically certified by the Lean 4 type-checker. The formalization comprises **6,700+ lines of verified code (LOC)**.
 
-To verify locally (pinned toolchain: **Lean v4.24.0**, Mathlib commit `f897ebcf`):
-
+To verify locally:
 ```bash
-cd formal-verification
-lake build
+git clone https://github.com/Luca-Casagrande/qftt-wesh.git
+cd qftt-wesh
+lake update
+lake build    
 ```
 
 This work was developed with the assistance of a cross-inferencing multi-AI workflow, primarily involving ChatGPT-5.2 Pro and Claude Opus 4.5 for theoretical development, mathematical derivations, and iterative refinement, but also Gemini 3 Pro and other models. Aristotle v.~0.6.0 (Harmonic) was also used, in conjunction with ChatGPT-5.2 Pro and Claude Opus 4.5, as a translation tool in the final stages to convert established mathematical content into Lean 4 syntax. The author intends to further document this multi-AI architecture in future work, hoping it may contribute to AI-assisted theoretical physics research. Throughout the process, the research, conceptual framework and its details, the workflow orchestration, and the verification of every output remained with the author.
@@ -214,6 +215,7 @@ If you use this repository, its datasets, analysis scripts, or formal proofs, pl
 }
 ```
 ## Changelog
+- **v1.4** (2026-02-05): Added lakefile.toml for reproducible one-command builds (`lake update && lake build`)
 - **v1.3** (2026-02-03): Added Appendix F formal verification (angular dependence law, 0 sorry, 0 axioms)
 - **v1.2** (2026-02-01): Fixed Appendix F figure numbering (F.1); added cross-platform outlook for trapped-ion validation
 - **v1.1** (2026-01-27): Clarified falsifiability hierarchy (core vs diagnostic); removed speculative Kerr paragraph
