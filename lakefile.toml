@@ -1,0 +1,12 @@
+name = "qftt-wesh"
+version = "0.1.0"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "master"
+
+[[lean_lib]]
+name = "FormalVerification"
+srcDir = "formal-verification"
+roots = ["AppendixA", "AppendixB", "AppendixC", "AppendixD", "AppendixF", "AppendixG", "AppendixH", "AppendixI", "AppendixJ", "Section1", "Section5", "Section6_Part1", "Section6_Part2"]

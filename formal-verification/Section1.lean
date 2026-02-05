@@ -83,7 +83,7 @@ theorem WESH_timelike_dist_nonneg (x y : WESH_SpacetimePoint) :
   exact Real.sqrt_nonneg _
 
 /-- Exponential spatial profile K_ξ(x,y) = exp(-|x-y|/ξ).
-    
+
     NOTE: The derivation of the correlation scale ξ and rate γ₀ from Planck units,
     including the proof that V_ξ = 8πξ⁴, is developed in AppendixA.lean. -/
 noncomputable def WESH_K_xi (xi : ℝ) (x y : WESH_SpacetimePoint) : ℝ :=
@@ -170,9 +170,9 @@ def weshGeneratorAdjoint {n : Type} [Fintype n] [DecidableEq n] (H : Matrix n n 
   L_gamma.foldl (fun acc p => acc + (p.2 : ℂ) • lindbladAdjoint p.1 A) 0
 
 /-- Pre-geometric WESH-Noether condition: L†[Q] = 0.
-    
+
     NOTE: The complete WESH-Noether theorem structure is developed in:
-    - AppendixG.lean: Matrix formalism, Prop G.2 (Noether ⟺ commutation), 
+    - AppendixG.lean: Matrix formalism, Prop G.2 (Noether ⟺ commutation),
       Cor G.1.1 (path independence), generator duality
     - AppendixC.lean: T-neutrality, GKSL identity, no-s-footprint theorem -/
 def weshNoether {n : Type} [Fintype n] [DecidableEq n] (H : Matrix n n ℂ) (L_gamma : List (Matrix n n ℂ × ℝ)) (Q : Matrix n n ℂ) : Prop :=
@@ -727,7 +727,7 @@ def IsPSD (M : Matrix n n ℂ) : Prop :=
   M.IsHermitian ∧ ∀ x : n → ℂ, 0 ≤ (dotProduct (star x) (M *ᵥ x)).re
 
 /-- Time-production functional Γ[Ψ] (Eq 2.27).
-    
+
     NOTE: The full development of physical time emergence t(s) = ∫₀ˢ Γ[Ψ(s')] ds',
     the Law of Large Numbers for eigentime counts, and the survival probability
     formalism are developed in AppendixB.lean. -/
@@ -809,8 +809,8 @@ open Real Filter Topology
 
 /-- Proposition 2.9: Decoupling in the G → 0 limit (ν → 0). -/
 theorem decoupling_limit (xi : ℝ → ℝ) (gamma_0 : ℝ → ℝ) (V_xi : ℝ → ℝ) (nu : ℝ → ℝ)
-    (h_xi : ∃ c1 > 0, ∀ G > 0, xi G = c1 * sqrt G)
-    (h_gamma : ∃ c2 > 0, ∀ G > 0, gamma_0 G = c2 / sqrt G)
+    (h_xi : ∃ c1 > 0, ∀ G > 0, xi G = c1 * Real.sqrt G)
+    (h_gamma : ∃ c2 > 0, ∀ G > 0, gamma_0 G = c2 / Real.sqrt G)
     (h_V : ∃ c3 > 0, ∀ G > 0, V_xi G = c3 * (xi G) ^ 4)
     (h_nu : ∃ c4 > 0, ∀ G > 0, nu G = c4 * gamma_0 G * V_xi G) :
     Tendsto nu (nhdsWithin 0 (Set.Ioi 0)) (nhds 0) := by

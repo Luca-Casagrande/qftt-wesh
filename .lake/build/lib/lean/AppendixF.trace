@@ -1,0 +1,30 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["c842d4c775562eee.olean"],
+  "i": "a60bcf85829449d5.ilean",
+  "c": "0f90a9eed3dcf8d4.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\build\\lib\\lean c:\\Users\\lucat\\.elan\\toolchains\\leanprover--lean4---v4.28.0-rc1\\bin\\lean.exe C:\\Users\\lucat\\Desktop\\qftt-wesh\\formal-verification\\AppendixF.lean -o C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\build\\lib\\lean\\AppendixF.olean -i C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\build\\lib\\lean\\AppendixF.ilean -c C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\build\\ir\\AppendixF.c --setup C:\\Users\\lucat\\Desktop\\qftt-wesh\\.lake\\build\\ir\\AppendixF.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["AppendixF:deps",
+   [["deps",
+     [["«qftt-wesh»/FormalVerification:extraDep",
+       [["@«qftt-wesh»:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Mathlib transitive imports (legacy)", "68fa8085e1671044"],
+        ["Mathlib:importAllArts", "734bc89e0397fc71"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.28.0, commit 3b0f2862196c6a8af9eb0025ee650252694013dd",
+   "612345b87aa96642"],
+  ["C:\\Users\\lucat\\Desktop\\qftt-wesh\\formal-verification\\AppendixF.lean",
+   "d034918d7defc08c"],
+  ["options", "00000000000006bb"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "44d07ef442da5af2"}
