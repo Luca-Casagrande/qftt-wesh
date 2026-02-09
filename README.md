@@ -215,6 +215,7 @@ If you use this repository, its datasets, analysis scripts, or formal proofs, pl
 }
 ```
 ## Changelog
+- **v1.5** (2026-02-09): Table 3 aligned with source data; added Sec 2.3 (discrimination from conventional models)
 - **v1.4** (2026-02-05): Added lakefile.toml for reproducible one-command builds
 - **v1.3** (2026-02-03): Added Appendix F formal verification (angular dependence law, 0 sorry, 0 axioms)
 - **v1.2** (2026-02-01): Fixed Appendix F figure numbering (F.1); added cross-platform outlook for trapped-ion validation
